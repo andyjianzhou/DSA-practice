@@ -1,5 +1,5 @@
 # Two solutions
-#1. 
+#1. Simple for loop
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
         total = 0
@@ -8,7 +8,7 @@ class Solution:
             nums[i] = total
         return nums
 
-#2.
+#2. Two pointer
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
         lp, rp = 0, 1
@@ -18,4 +18,6 @@ class Solution:
             rp += 1
         return nums
 
-        
+# How this works is that we have two pointers, one at the beginning and one at the end. 
+# We add the value at the end pointer to the value at the beginning pointer and then move both pointers up by one. 
+# We do this until the end pointer reaches the end of the array. This is a prefix sum problem.
