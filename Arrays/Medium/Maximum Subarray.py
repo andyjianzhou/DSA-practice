@@ -19,4 +19,5 @@ class Solution:
             rp += 1      
         return highest
  # works for all except all neg values
+ # maybe just one for loop would do
         
