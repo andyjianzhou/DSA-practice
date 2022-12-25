@@ -14,3 +14,4 @@ class Solution:
                 if nums[i] > smallestMap[offset]:
                     smallestMap[offset] = nums[i]
         return smallestMap[min(smallestMap.keys())]
+    # this runs in O(n) time and O(n) space
